@@ -1,0 +1,25 @@
+.container {
+  margin: 1em;
+}
+
+/* .col-sm{
+    width: 10em;
+} */
+
+.display-heading {
+  font-weight: bold;
+  padding-right: 1em;
+  width: 8em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.display-value {
+  width: 10em;
+}
+
+.condition {
+  display: flex;
+  align-content: center;
+  padding-top: 2em;
+}

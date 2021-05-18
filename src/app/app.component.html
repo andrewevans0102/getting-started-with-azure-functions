@@ -1,0 +1,45 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class="display-4">Weather App</h1>
+        <p class="lead">
+          This is a simple weather app that uses the NOAA APIs and the
+          OpenWeatherMap API to show details of your local weather
+        </p>
+      </div>
+      <div class="col-sm">
+        <img class="header-image" src="../assets/sunlight.png" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h1>Current Weather</h1>
+    </div>
+    <div class="col-sm">
+      <button (click)="saveFile()">Save File</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <app-current-weather
+        [weatherDisplay]="weatherDisplay"
+      ></app-current-weather>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h1>Today's Forecast</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <app-forecast [weatherDisplay]="weatherDisplay"></app-forecast>
+    </div>
+  </div>
+</div>
